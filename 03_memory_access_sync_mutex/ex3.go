@@ -7,13 +7,13 @@ import (
 
 
 func ConcurrencyTest(){
-	var memoryAccess sync.Mutex 	
+	var memoryAccess sync.Mutex  //동기화 변수 설정 
 	var value int 
 
 	go func() {
-		memoryAccess.Lock()
+		memoryAccess.Lock() //잠금
 		value++ 
-		memoryAccess.Unlock()
+		memoryAccess.Unlock() //잠금 해제 
 	}()
 
 	memoryAccess.Lock()
