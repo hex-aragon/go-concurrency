@@ -1,0 +1,1 @@
+go test fool_fast_test.go -benchtime=10s -bench=.

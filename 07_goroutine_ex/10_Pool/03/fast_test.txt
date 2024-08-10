@@ -1,0 +1,6 @@
+goos: linux
+goarch: amd64
+cpu: 13th Gen Intel(R) Core(TM) i5-13500H
+BenchmarkNetworkRequest-16         18938           1422901 ns/op
+PASS
+ok      command-line-arguments  46.219s
